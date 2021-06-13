@@ -32,6 +32,7 @@ gem "refile-mini_magick"
 gem 'bootstrap', '~> 4.5'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
+gem 'dotenv-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -54,6 +55,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rubocop-airbnb'
+end
+
+group :production do
+  gem 'mysql2'
 end
 
 group :test do
